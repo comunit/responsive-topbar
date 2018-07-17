@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper {
+  width: 80%;
+  display: inline-block;
+}
+
+ul.main-ul {
+  width: 100%;
+  display: inline-block;
+  border-bottom: 1px solid #dadada;
+  text-align: initial;
+}
+
+.main-li {
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #dadada;
+  color: #656565;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: -4px;
+}
+
+.main-li:hover {
+  background: #f6f6f6;
+  cursor: pointer;
+}
+
+.main-li.log-in:hover {
+  background: none;
+  cursor: default;
+}
+
+li.log-in {
+  text-align: left;
+  border: none;
+}
+
+.jobs {
+  border-left: 1px solid #e1e1e1;
+}
+
+li.log-in a {
+  text-decoration: none;
+  color: #5b5b5b;
+  font-size: 14px;
+  font-weight: 100
+}
+
+.red {
+  color: #e33127;
+}
+
+.useful {
+  border: none;
+  color: #5b5b5b;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 11px;
+  position: relative;
+}
+
+.useful a {
+  text-decoration: none;
+  color: #808080;
+  position: relative;
+}
+
+.useful a::after {
+  content: "";
+  background: url(./arrow.png) no-repeat;
+  height: 10px;
+  width: 11px;
+  display: -webkit-inline-box;
+  background-position: 50% 50%;
+  margin-left: 13px;
+}
+
+.pipe {
+  color: #e1e1e1;
+}
+
+.login-word:hover {
+  color: #e33127
+}
+
+.register-word:hover {
+  color: #e33127;
+}
+
+.drop-down {
+  width: 193px;
+  border: 1px solid #e1e1e1;
+  position: absolute;
+  top: 38px;
+  left: -78px;
+  border-top: none;
+  border-bottom: none;
+  display: none;
+}
+
+.drop-down ul {
+  list-style-type: none;
+}
+
+.drop-down li {
+  padding: 7px;
+  border-bottom: 1px solid #e1e1e1;
+  color: #656565;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.drop-down li:hover {
+  background: #f6f6f6;
+  cursor: pointer;
+}
+
+.useful:hover .drop-down {
+  display: block;
+}
+
+.right-side {
+  float: left;
+}
+
+.left-side {
+  float: right;
+}
+
+.sm-hide {
+  display: none;
+}
+
+/* responsive styles */
+
+@media only screen and (max-width: 1023px) {
+  .drive,
+  .homes {
+    display: none;
+  }
+  .drive-sm,
+  .homes-sm {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 676px) {
+  .familynotices {
+    display: none;
+  }
+  .familynotices-sm {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 526px) {
+  .localsearch {
+    display: none;
+  }
+  .localsearch-sm {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 387px) {
+  .jobs {
+    display: none;
+  }
+  .jobs-sm {
+    display: block;
+  }
+}
